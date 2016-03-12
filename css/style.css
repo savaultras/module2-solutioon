@@ -1,0 +1,102 @@
+* {
+box-sizing: border-box;
+font-family: helvetica;
+}
+
+h1 {
+text-align: center;
+margin-bottom: 30px;
+font-size: 1.75em;
+}
+
+.row1 {
+width: 100%;
+}
+
+.row1 > div {
+margin-right: 1%;
+margin-left: 2%;
+margin-bottom: 15px;
+}
+
+.row1-col1 {
+background-color: yellow;
+}
+
+.row1-col2 {
+background-color: black;
+color: white;
+}
+
+.row1-col3 {
+background-color: green;
+
+}
+.row1-col1, .row1-col2, .row1-col3{
+border: 1px solid black;
+}
+
+.row1-col-row1 {
+	width: 200px;
+	padding-right: 20px;
+	padding-left: 20px;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.row1-col1-row1{
+background-color: black;
+color: white;
+}
+
+.row1-col2-row1{
+background-color: green;
+}
+
+.row1-col3-row1{
+background-color: red;
+}
+.row1-col1-row1, .row1-col2-row1, .row1-col3-row1{
+	font-size: 1.25em;
+}
+
+.row1-col-row2 {
+	padding: 60px 10px 10px 10px;
+}
+
+	/* Large devices */
+@media(min-width: 992px) {
+.col-lg-4 {
+position: relative;
+width: 30%;
+float: left;
+	}
+
+}
+	/* Medium devices */
+@media(min-width: 768px) and (max-width: 991px){
+.col-md-6, .col-md-12{
+position: relative;
+float: left;
+}
+
+.col-md-6 {
+width: 45%;
+}
+
+.col-md-12{
+width: 93%;
+	}
+}
+	/* Small devices */
+@media(max-width: 767px) {
+.col-sm-12{
+position: relative;
+float: left;
+width: 90%;
+	}
+	
+}
